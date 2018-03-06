@@ -33,7 +33,7 @@ More information about the GCT file format can be found at [The Broad Institute]
 1. [Python3](https://www.python.org/) - Programming Language
 2. [Pandas](https://pandas.pydata.org/) - Data Analysis Library
 
-# Usage
+## Usage
 
 python3 ./parse_cuffdiff.py
 
