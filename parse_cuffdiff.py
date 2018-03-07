@@ -264,33 +264,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
-
-
-# Testing:
-
-# import pandas as pd
-# df_ed=pd.read_csv('/home/nick/Downloads/cuff_diff_summary/gene_exp.diff', delimiter='\t')
-# df_ed = df_ed[df_ed["significant"] == 'yes']
-
-# df = pd.read_csv('/home/nick/Downloads/cuff_diff_summary/genes.read_group_tracking', delimiter='\t')
-# pt = pd.pivot_table(df.loc[~df['status'].isin(['FAIL','HIDATA'])], index='tracking_id', columns=['condition','replicate'], values='FPKM')
-# pt['mean'] = pt.mean(axis=1)
-# pt = pt[pt['mean'] > 0]
-
-# def get_gene(row, df_ed):
-# 	result = df_ed.loc[(df_ed['test_id'] == row.name)]
-# 	gene = 'NA'
-# 	if result.shape[0] > 0:
-# 		gene = result.iloc[0].gene
-# 	return gene
-
-# pt['gene'] = pt.apply(get_gene, axis=1, args=(df_ed,))
-# pt = pt[pt.gene != 'NA']
-
-# pt.drop('mean', axis=1, inplace=True)
-
-# pd.DataFrame(pt.to_records())
-# result:
-# tracking_id    ('CAS', 0)   ('CAS', 1)   ('CAS', 2)  ...
-# 0    ENSMUSG00000000031.15     16.989900    17.526400    18.659900
