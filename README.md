@@ -97,6 +97,10 @@ Output file: gct.tsv
 
 Done!
 ```
+## Tested On
+* Ubuntu 16.04 LTS
+* RHEL 6,7
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
